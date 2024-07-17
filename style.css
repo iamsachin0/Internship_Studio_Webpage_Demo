@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background-color: seagreen;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    background-color: lightgrey;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgb(240, 248, 14);
+    color: red;
+}
+
+.navbar a {
+    color: rgb(90, 84, 84);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    flex: 30%;
+    background-color: azure;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 70%;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.title-image {
+    background-color: tan;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+footer{
+    padding: 5px;
+    text-align: center;
+    background: cadetblue;
+}
+
+ul{
+    list-style-image: url(Assets/images/arrow-right-s-line.png);
+}
+
+@media(max-width:700px){
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
